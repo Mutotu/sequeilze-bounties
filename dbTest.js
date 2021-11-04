@@ -51,7 +51,9 @@ const models = require("./models");
 //   capture.save();
 // };
 // han();
-
+///
+///
+//7
 // const dengar = async () => {
 //   const guy = await models.hunters.findOne({
 //     where: {
@@ -76,22 +78,26 @@ const models = require("./models");
 ////
 ///
 // await queryInterface.addColumn("hunters", "bountyId", {
-//     type: Sequelize.DataTypes.INTEGER,
+// //    type: Sequelize.DataTypes.INTEGER,
+//
+///
+///
+//
+///////////dont work///////////
+// const hanSolo = async () =>
+//   models.findOne({
+//     where: {
+//       name: "Han Solo",
+//     },
+//   });
+// console.log(hanSolo);
 
-const hanSolo = async () =>
-  models.property.findOne({
-    where: {
-      name: "Han Solo",
-    },
-  });
-console.log(hanSolo);
+// const bobbaFett = async () =>
+//   models.findOne({
+//     where: {
+//       name: "Bobba Fett",
+//     },
+//   });
+// console.log(bobbaFett);
 
-const bobbaFett = async () =>
-  models.property.findOne({
-    where: {
-      name: "Bobba Fett",
-    },
-  });
-console.log(bobbaFett);
-
-const assoc = () => {};
+// hanSolo.addHunters(bobbaFett);
