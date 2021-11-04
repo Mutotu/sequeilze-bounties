@@ -72,3 +72,26 @@ const models = require("./models");
 //     active: false,
 //   },
 // });
+
+////
+///
+// await queryInterface.addColumn("hunters", "bountyId", {
+//     type: Sequelize.DataTypes.INTEGER,
+
+const hanSolo = async () =>
+  models.property.findOne({
+    where: {
+      name: "Han Solo",
+    },
+  });
+console.log(hanSolo);
+
+const bobbaFett = async () =>
+  models.property.findOne({
+    where: {
+      name: "Bobba Fett",
+    },
+  });
+console.log(bobbaFett);
+
+const assoc = () => {};
