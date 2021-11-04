@@ -83,15 +83,24 @@ const models = require("./models");
 ///
 ///
 //
-///////////dont work///////////
-// const hanSolo = async () =>
-//   models.findOne({
+///////////Associaton///////////
+//1
+// const associations = async () => {
+//   const han = await models.bounties.findOne({
 //     where: {
 //       name: "Han Solo",
 //     },
 //   });
-// console.log(hanSolo);
-
+//   const boba = await models.hunters.findOne({
+//     where: {
+//       name: "Boba Fett",
+//     },
+//   });
+//   boba.setBounties(han);
+//   //   han.Hunters(boba);
+// };
+//
+// associations();
 // const bobbaFett = async () =>
 //   models.findOne({
 //     where: {
@@ -101,3 +110,44 @@ const models = require("./models");
 // console.log(bobbaFett);
 
 // hanSolo.addHunters(bobbaFett);
+//2
+// const getHanHunters = async () => {
+//   const han = await models.bounties.finOne({
+//     where: {
+//       name: "Han Solo",
+//     },
+//   });
+//   const hanHunters = await han.getHunters();
+//   console.log(hanHunters);
+// };
+
+// getHanHunters();
+
+////3
+//
+// const bobaBounty = async () => {
+//   const boba = await models.hunters.findOne({
+//     where: {
+//       name: "Boba Fett",
+//     },
+//   });
+//   const bBounty = await boba.getBounty();
+//   console.log(bBounty);
+// };
+
+// bobaBounty();
+
+///4
+// const associateHan = async () => {
+//   const hans = await models.bounties.findOne({
+//     where: {
+//       name: "Han Solo",
+//     },
+//   });
+//   const dengar = await models.hunters.findOne({
+//     where: {
+//       name: "Dengar",
+//     },
+//   });
+//   dengar.setBounties(hans);
+// };

@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      models.bounties.belongsTo(models.hunters);
+      models.bounties.hasMany(models.hunters);
     }
   }
   bounties.init(
