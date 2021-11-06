@@ -83,7 +83,7 @@ const models = require("./models");
 ///
 ///
 //
-///////////Associaton///////////
+///////////Associaton/////////////////////////////
 //1
 // const associations = async () => {
 //   const han = await models.bounties.findOne({
@@ -150,4 +150,47 @@ const models = require("./models");
 //     },
 //   });
 //   dengar.setBounties(hans);
+// };
+
+////
+// const associations = async () => {
+//   const dengar = await models.bounties.findOne({
+//     where: {
+//       name: "Dengar",
+//     },
+//   });
+//   const han = await models.hunters.findOne({
+//     where: {
+//       name: "Han Solo",
+//     },
+//   });
+//   han.setBounties(dengar);
+//   //   han.Hunters(han);
+// };
+
+///5
+
+// const gethunters = async () => {
+//   const boba = await models.bounties.finOne({
+//     where: {
+//       name: "Bobba Fet",
+//     },
+//   });
+//   const dengarHunters = await boba.getHunters();
+
+// };
+
+// gethunters();
+
+////6
+
+//
+// const bounty = async () => {
+//   const bobba = await models.hunters.findOne({
+//     where: {
+//       name: "Boba Fett",
+//     },
+//   });
+//   const bobba = await boba.getBounty();
+
 // };
